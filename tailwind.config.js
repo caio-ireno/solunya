@@ -14,6 +14,9 @@ module.exports = {
       BackgroundWhite: "#ffffff",
       BackgroundWhite20: "#FAFAFA",
       BackgroundButton: "#FFB733",
+      BackgroundOrange: "#FF6D3B",
+      BackgroundLightBlue: "#16C6CC",
+      BackgroundYellow: "#FFB733",
       // Adicionando a cor primária
     },
     fontFamily: {
