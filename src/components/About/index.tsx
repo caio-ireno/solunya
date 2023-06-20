@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import element from "../../public/Elemento.png";
+import element from "../../../public/Elemento.png";
 
 export function About() {
   return (

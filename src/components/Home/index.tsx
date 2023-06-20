@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import homeImg from "../..//public/homeimg2.png";
-import solunyaLogo from "../..//public/solunya-white.png";
+import homeImg from "../../../public/HomeImg.png";
+import solunyaLogo from "../../../public/solunya-white.png";
 
 export function Home() {
   return (
@@ -33,7 +33,11 @@ export function Home() {
       </div>
 
       <div className="hidden lg:flex  md:basis-1/3 h-full justify-center items-center">
-        <Image className="hidden md:block" src={homeImg} alt="home image" />
+        <Image
+          className="hidden md:flex object-contain w-full"
+          src={homeImg}
+          alt="home image"
+        />
       </div>
     </main>
   );
