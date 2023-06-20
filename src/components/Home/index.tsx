@@ -1,42 +1,39 @@
 import Image from "next/image";
 
-import homeImg from "../../../public/HomeImg.png";
 import solunyaLogo from "../../../public/solunya-white.png";
+import { Carousel } from "./Carousel";
 
 export function Home() {
   return (
-    <main className="w-full  lg:h-[800px] h-[500px] bg-BackgroundBlue flex flex-rows">
-      <div className="flex flex-col lg:basis-2/3 basis-full items-center lg:items-start justify-around md:ml-10">
-        <div className="flex items-center">
-          <Image
-            src={solunyaLogo}
-            alt="Imagem do logo da solunya"
-            width={150}
-          />
-          <div>
-            <p className="text-md font-bold text-[#fff]">SOLUNYA </p>
-            <p className="text-md font-bold text-[#fff]">SOFTWARE HOUSE</p>
-          </div>
-        </div>
-
+    <main className="w-full  h-[800px]  bg-BackgroundBlue flex flex-col p-5 ">
+      <div className="flex items-center md:mb-20 mb-5">
+        <Image src={solunyaLogo} alt="Imagem do logo da solunya" width={150} />
         <div>
-          <p className="lg:text-8xl md:text-6xl lg:text-start text-center text-6xl text-[#fff]">
-            Transformando ideias
-          </p>
-          <p className="lg:text-8xl md:text-6xl  lg:text-start text-center  sm:text-6xl font-bold text-[#fff]">
-            em experiências digitais
-          </p>
+          <p className="text-md font-bold text-[#fff]">SOLUNYA </p>
+          <p className="text-md font-bold text-[#fff]">SOFTWARE HOUSE</p>
         </div>
-        <button className="bg-BackgroundButton w-48 h-12 rounded-xl">
-          Saiba mais
-        </button>
       </div>
 
-      <div className="hidden lg:flex  md:basis-1/3 h-full justify-center items-center">
-        <Image
-          className="hidden md:flex object-contain w-full"
-          src={homeImg}
-          alt="home image"
+      <div className="flex flex-col items-center mb-20">
+        <p className="lg:text-8xl md:text-6xl lg:text-start text-center text-4xl text-[#fff]">
+          Transformando idéias
+        </p>
+        <p className="lg:text-8xl md:text-6xl  lg:text-start text-center  sm:text-6xl text-4xl font-bold text-[#fff]">
+          em experiências digitais
+        </p>
+      </div>
+
+      <h1 className="lg:text-3xl md:text-2xl lg:text-start text-center text-2xl text-[#fff] mb-5">
+        EMPRESAS QUE CONFIAM E INDICAM A SOLUNYA
+      </h1>
+
+      <div className=" flex w-full justify-center">
+        <Carousel
+          ArrayCarousel={[
+            { name: "caio", id: 1, description: "brasil" },
+            { name: "nathalia", id: 1, description: "argentina" },
+            { name: "Giovani", id: 1, description: "bolivia" },
+          ]}
         />
       </div>
     </main>
