@@ -11,7 +11,11 @@ export function Wpp() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image className="w-20" src={WppIcon} alt="Logo do WhatsApp" />
+          <Image
+            className="md:w-20 w-10"
+            src={WppIcon}
+            alt="Logo do WhatsApp"
+          />
         </a>
       </div>
     </>

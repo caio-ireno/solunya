@@ -5,7 +5,7 @@ import { CardFeature } from "./CardFeature";
 
 export function Features() {
   return (
-    <main className="w-full h-[800px]  bg-BackgroundWhite20 flex flex-col">
+    <main className="w-full sm:h-[800px] h-[700px]  bg-BackgroundWhite20 flex flex-col">
       <div className="flex md:basis-2/3 basis-1/3 flex-row">
         <div className="flex basis-2/3 items-center justify-center flex-col">
           <h1 className="xl:text-9xl lg:text-8xl md:text-6xl text-4xl">
