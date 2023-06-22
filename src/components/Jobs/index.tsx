@@ -18,7 +18,10 @@ export default function Jobs() {
   const [over, setOver] = useState(false);
   console.log(over);
   return (
-    <main className=" w-full lg:h-[400px] h-[200px]  mt-20">
+    <main className=" w-full lg:h-[400px] h-[200px]  sm:mt-20 mt-5 mb-10">
+      <h1 className="w-full text-center md:text-5xl sm:text2-xl text-xl font-bold sm:mb-10 mb-2">
+        Empresas parceiras
+      </h1>
       <Swiper
         slidesPerView={2}
         spaceBetween={10}

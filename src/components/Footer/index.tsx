@@ -5,7 +5,7 @@ import linkedinIcon from "../../../public/linkedin.png";
 
 export function Footer() {
   return (
-    <main className="w-full sm:h-[800px] h-[1000px] bg-BackgroundBlue flex flex-col gap-5 p-10">
+    <main className="w-full sm:h-[800px] h-[700px] bg-BackgroundBlue flex flex-col gap-5 p-10">
       <div className="flex flex-row md:basis-3/4 basis-1/6 ">
         <div className="basis-full md:basis-2/3">
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-TextColorLight">
