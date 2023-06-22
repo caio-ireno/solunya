@@ -27,8 +27,8 @@ export default function Jobs() {
         modules={[Autoplay]}
         className="mySwiper "
       >
-        <SwiperSlide onMouseOver={() => setOver(!over)}>
-          <div onMouseOver={() => setOver(!over)} className="flip-card">
+        <SwiperSlide>
+          <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front bg-BackgroundCian">
                 <Image src={OndasDeParto} alt="ondas de parto imagem" />
