@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import detail from "../../../public/HomeImg.png";
 import solunyaLogo from "../../../public/solunya-white.png";
 
 export function Home() {
@@ -19,16 +20,25 @@ export function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center sm:mb-20  mb-10">
-        <p className="lg:text-7xl md:text-6xl lg:text-start text-center text-4xl text-[#fff]">
-          Transformando idéias
-        </p>
-        <p className="lg:text-7xl md:text-6xl  lg:text-start text-center   text-4xl font-bold text-[#fff]">
-          em{" "}
-          <span className="font-bold text-BackgroundYellow">
-            experiências digitais
-          </span>
-        </p>
+      <div className="flex flex-row  ">
+        <div className="flex flex-col basis-1/2 items-center sm:mb-20  mb-10">
+          <h1 className="lg:text-8xl md:text-6xl lg:text-start text-center text-4xl text-[#fff]">
+            Transformando idéias
+          </h1>
+          <h1 className="lg:text-8xl md:text-6xl  lg:text-start text-center   text-4xl font-bold text-[#fff]">
+            em{" "}
+            <span className="font-bold text-BackgroundYellow">
+              experiências digitais
+            </span>
+          </h1>
+        </div>
+        <div className="basis-1/2 flex justify-center">
+          <Image className=" " src={detail} alt="Detalhe geometrico" />
+        </div>
+      </div>
+
+      <div>
+        <input></input>
       </div>
     </main>
   );

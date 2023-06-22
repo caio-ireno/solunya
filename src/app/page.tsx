@@ -1,4 +1,3 @@
-"use client";
 import Jobs from "@/components/Jobs";
 import { Wpp } from "@/pages/_app";
 
