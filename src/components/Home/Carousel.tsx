@@ -10,6 +10,7 @@ interface carouselProps {
     ImgName: StaticImageData;
     name: string;
     description: string;
+    url: string;
   }[];
 }
 
@@ -45,7 +46,8 @@ export function Carousel(props: carouselProps) {
             {props.ArrayCarousel.map((array, index) => {
               if (index === currentSlide) {
                 return (
-                  <div
+                  <a
+                    href={array.url}
                     key={array.id}
                     className="animate-fadeIn w-full h-full flex md:flex-row flex-col gap-5 items-center justify-center"
                   >
@@ -62,7 +64,7 @@ export function Carousel(props: carouselProps) {
                         {array.description}
                       </p>
                     </div>
-                  </div>
+                  </a>
                 );
               }
             })}

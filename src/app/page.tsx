@@ -1,3 +1,5 @@
+"use client";
+import Jobs from "@/components/Jobs";
 import { Wpp } from "@/pages/_app";
 
 import { About } from "../components/About";
@@ -11,6 +13,7 @@ export default function App() {
     <main className="w-full">
       <Wpp />
       <Home />
+      <Jobs />
       <About />
       <Features />
       <News />

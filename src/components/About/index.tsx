@@ -4,7 +4,7 @@ import element from "../../../public/Elemento.png";
 
 export function About() {
   return (
-    <main className="w-full lg:h-[800px] md:h-[600px] h-[400px] bg-BackgroundWhite relative sm:pl-10 p-5 flex flex-col justify-center">
+    <main className="w-full lg:h-[700px] md:h-[600px] h-[400px] bg-BackgroundWhite relative sm:pl-10 p-5 flex flex-col justify-center">
       <h1 className="xl:text-8xl lg:text-7xl md:text-7xl sm:text-4xl text-4xl | sm:max-w-md md:max-w-lg lg:max-w-2xl max-w-md  mb-10">
         Criação de Sites e Apps
       </h1>
