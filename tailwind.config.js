@@ -19,6 +19,7 @@ module.exports = {
       BackgroundYellow: "#FFB733",
       BackgroundCian: "#D6EAF8",
       BackgroundLightPink: "#FADBD8",
+      BackgroundPink: "#FAF0F0",
       BackgroundWppAnimation: "#58D68D",
       TextColorLight: "#fff",
       TextColorDark: "#000",
